@@ -4,13 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IronClaw — Personal AI Agent</title>
-  <meta name="description" content="Secure, self-hosted personal AI agent. WhatsApp integration, email management, calendar, deep research — all running on your machine.">
+  <meta name="description" content="Secure, self-hosted personal AI agent.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/png" href="/icon.png">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: #0a0e1a; color: #e2e8f0; min-height: 100vh; }
+    .gate { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 24px; }
+    .gate img { width: 80px; height: 80px; border-radius: 16px; margin-bottom: 24px; }
+    .gate h1 { font-size: 24px; margin-bottom: 8px; }
+    .gate p { color: #64748b; font-size: 14px; margin-bottom: 24px; }
+    .gate input { width: 260px; padding: 10px 16px; background: #1e293b; border: 1px solid #334155; border-radius: 8px; color: white; font-size: 14px; text-align: center; outline: none; }
+    .gate input:focus { border-color: #10b981; }
+    .gate .error { color: #f87171; font-size: 13px; margin-top: 8px; display: none; }
     .hero { max-width: 800px; margin: 0 auto; padding: 80px 24px; text-align: center; }
-    .logo { width: 120px; height: 120px; border-radius: 50%; margin-bottom: 32px; }
+    .logo { width: 120px; height: 120px; border-radius: 24px; margin-bottom: 32px; }
     h1 { font-size: 48px; font-weight: 700; margin-bottom: 16px; background: linear-gradient(135deg, #10b981, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .subtitle { font-size: 20px; color: #94a3b8; margin-bottom: 48px; line-height: 1.6; }
     .downloads { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 64px; }
@@ -27,35 +35,84 @@
     .feature p { font-size: 14px; color: #64748b; line-height: 1.5; }
     .footer { text-align: center; padding: 32px 24px; color: #475569; font-size: 13px; border-top: 1px solid #1e293b; }
     .version { display: inline-block; padding: 4px 12px; background: #1e293b; border-radius: 20px; font-size: 13px; color: #64748b; margin-bottom: 32px; }
+    .hidden { display: none !important; }
     @media (max-width: 480px) { h1 { font-size: 32px; } .subtitle { font-size: 16px; } .downloads { flex-direction: column; align-items: center; } }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <img src="/icon.png" alt="IronClaw" class="logo">
-    <h1>IronClaw</h1>
-    <p class="subtitle">Secure, self-hosted personal AI agent.<br>WhatsApp, email, calendar, deep research — all running on your machine.</p>
-    <span class="version">v0.6.1</span>
-    <div class="downloads">
-      <a href="https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-arm64.dmg" class="btn btn-primary">
-        <span class="btn-icon">&#63743;</span> Mac (Apple Silicon)
-      </a>
-      <a href="https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-x64.dmg" class="btn btn-secondary">
-        <span class="btn-icon">&#63743;</span> Mac (Intel)
-      </a>
-      <a href="https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-setup.exe" class="btn btn-secondary">
-        <span class="btn-icon">&#x1F5A5;</span> Windows
-      </a>
+  <!-- Password gate -->
+  <div class="gate" id="gate">
+    <img src="/icon.png" alt="IronClaw">
+    <h1 style="background:none;-webkit-text-fill-color:#e2e8f0;font-size:24px">IronClaw</h1>
+    <p>Enter access code to continue</p>
+    <input type="password" id="code" placeholder="Access code" autofocus>
+    <div class="error" id="error">Invalid code</div>
+  </div>
+
+  <!-- Main content (hidden until authenticated) -->
+  <div id="content" class="hidden">
+    <div class="hero">
+      <img src="/icon.png" alt="IronClaw" class="logo">
+      <h1>IronClaw</h1>
+      <p class="subtitle">Secure, self-hosted personal AI agent.<br>WhatsApp, email, calendar, deep research — all running on your machine.</p>
+      <span class="version">v0.6.1</span>
+      <div class="downloads">
+        <a href="https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-arm64.dmg" class="btn btn-primary">
+          <span class="btn-icon">&#63743;</span> Mac (Apple Silicon)
+        </a>
+        <a href="https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-x64.dmg" class="btn btn-secondary">
+          <span class="btn-icon">&#63743;</span> Mac (Intel)
+        </a>
+        <a href="https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-setup.exe" class="btn btn-secondary">
+          <span class="btn-icon">&#x1F5A5;</span> Windows
+        </a>
+      </div>
     </div>
+    <div class="features">
+      <div class="feature"><div class="feature-icon">💬</div><h3>WhatsApp</h3><p>Talk to your AI via WhatsApp self-chat. Send commands, get responses, voice notes.</p></div>
+      <div class="feature"><div class="feature-icon">📧</div><h3>Email</h3><p>Manage Gmail and Outlook. Read, send, reply, archive — all from WhatsApp.</p></div>
+      <div class="feature"><div class="feature-icon">📅</div><h3>Calendar</h3><p>View events, create meetings, morning briefings. Google and Microsoft calendars.</p></div>
+      <div class="feature"><div class="feature-icon">🔬</div><h3>Research</h3><p>Deep multi-agent research via AXON. Explores, validates, synthesizes from multiple sources.</p></div>
+      <div class="feature"><div class="feature-icon">🔒</div><h3>Self-Hosted</h3><p>Runs entirely on your machine. No cloud, no data leaves your device. Your keys, your data.</p></div>
+      <div class="feature"><div class="feature-icon">🧩</div><h3>Plugin System</h3><p>Extensible architecture. Add new capabilities with a single plugin file.</p></div>
+    </div>
+    <div class="footer">&copy; 2026 IronClaw. All rights reserved.</div>
   </div>
-  <div class="features">
-    <div class="feature"><div class="feature-icon">💬</div><h3>WhatsApp</h3><p>Talk to your AI via WhatsApp self-chat. Send commands, get responses, voice notes.</p></div>
-    <div class="feature"><div class="feature-icon">📧</div><h3>Email</h3><p>Manage Gmail and Outlook. Read, send, reply, archive — all from WhatsApp.</p></div>
-    <div class="feature"><div class="feature-icon">📅</div><h3>Calendar</h3><p>View events, create meetings, morning briefings. Google and Microsoft calendars.</p></div>
-    <div class="feature"><div class="feature-icon">🔬</div><h3>Research</h3><p>Deep multi-agent research via AXON. Explores, validates, synthesizes from multiple sources.</p></div>
-    <div class="feature"><div class="feature-icon">🔒</div><h3>Self-Hosted</h3><p>Runs entirely on your machine. No cloud, no data leaves your device. Your keys, your data.</p></div>
-    <div class="feature"><div class="feature-icon">🧩</div><h3>Plugin System</h3><p>Extensible architecture. Add new capabilities with a single plugin file.</p></div>
-  </div>
-  <div class="footer">&copy; 2026 IronClaw. All rights reserved.</div>
+
+  <script>
+    // Simple hash-based auth — share the code with friends
+    // Code: "ironclaw2026" → SHA-256 hash stored here (not the plaintext)
+    const HASH = '6e17c2351ff155fd6673234ed713f3a69dc9a796c06a2bf86aaaf79137738088';
+    const STORAGE_KEY = 'ic_auth';
+
+    async function sha256(str) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+    }
+
+    async function check(code) {
+      return await sha256(code) === HASH;
+    }
+
+    // Check if already authenticated
+    if (localStorage.getItem(STORAGE_KEY) === HASH) {
+      document.getElementById('gate').classList.add('hidden');
+      document.getElementById('content').classList.remove('hidden');
+    }
+
+    document.getElementById('code').addEventListener('keydown', async (e) => {
+      if (e.key === 'Enter') {
+        const ok = await check(e.target.value);
+        if (ok) {
+          localStorage.setItem(STORAGE_KEY, HASH);
+          document.getElementById('gate').classList.add('hidden');
+          document.getElementById('content').classList.remove('hidden');
+        } else {
+          document.getElementById('error').style.display = 'block';
+          e.target.value = '';
+        }
+      }
+    });
+  </script>
 </body>
 </html>
