@@ -1,0 +1,11 @@
+version: 0.4.0
+files:
+  - url: https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-arm64.dmg
+    sha512: 8uR/8l0PHkr+I8Jc52rC8ZlPDo/B7YfxUdUMiKJ3SHLgEenE1p3WVaPH6mOzNw39+8zqmfnEyDdgWSNBYEBIbA==
+    size: 101452229
+  - url: https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-x64.dmg
+    sha512: cKBJnBhc/RvW9xYYCbLWBU5QhfdsVcpnetxWx0rF1gh5nWdscqFWWksZto3uOZqGNv7cA6lke1M4tE754rXUpQ==
+    size: 107399364
+path: https://github.com/musicdevghost/ironclaw-site/releases/latest/download/IronClaw-arm64.dmg
+sha512: 8uR/8l0PHkr+I8Jc52rC8ZlPDo/B7YfxUdUMiKJ3SHLgEenE1p3WVaPH6mOzNw39+8zqmfnEyDdgWSNBYEBIbA==
+releaseDate: '2026-04-07T08:54:18.457Z'
