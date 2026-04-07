@@ -1,17 +1,17 @@
-version: 0.5.5
+version: 0.6.1
 files:
-  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.5/IronClaw-arm64-mac.zip
-    sha512: oiQEWvIbiEFywFOhJxnLPwEmZRmQX+zf/NRgBztsttQ2BeolWxVLlp+0vKUxfaKnsxHte68coQdVx2NGVw1wqg==
-    size: 96540033
-  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.5/IronClaw-mac.zip
-    sha512: uVMdKXjEFNzmfdN65d/bvSSvi/hrk/FlcQOPqmrag0FrfnhrM+4AHdJFUB+7mba8AqoCySqhnwLkg0lacimPlg==
-    size: 102513266
+  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.6.1/IronClaw-arm64-mac.zip
+    sha512: V3gYDCsSg5diRcmBwsUrEx0xffBcZHW/RlFbzj3sB6gy22oUQws+tUwoCSNjGXgwnyaO7uXamEHwbYpFyG8ZJQ==
+    size: 96539754
+  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.6.1/IronClaw-mac.zip
+    sha512: 6XCJEJOw7ypzzIB9hbIVM3buiP8KjHsGXWWJlttrkfWFizGRxM7p5M11EHXcWRDHJ1c3Q5LK04yX5fOaxfkOqA==
+    size: 102512983
   - url: IronClaw-arm64.dmg
-    sha512: 7inxx9tQkjojeHmVZDbw50Rsml1K6QxyawBgsiSgbsVYgiPxAkRKKbccplz411Q6M1Izl3OPxtyjslMBtLBqvA==
-    size: 101126614
+    sha512: AYkOpHtraLFxJbcyIcQkFEKFjyzBccYmhdZnk8/5Mv6KecmtOhL2OedUAlvYJdvxXCauvEB2YVN8rcz/c7CQ+A==
+    size: 101127526
   - url: IronClaw-x64.dmg
-    sha512: 6cX64TlqzlL0Vaol7Ua+oNnqjN8+eI1o9xe5sWqyHQFX1x1M69rH3HxJ3mrYZMjvlyLz22/X+iRXFXDaTRVfCQ==
-    size: 106969510
-path: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.5/IronClaw-arm64-mac.zip
-sha512: oiQEWvIbiEFywFOhJxnLPwEmZRmQX+zf/NRgBztsttQ2BeolWxVLlp+0vKUxfaKnsxHte68coQdVx2NGVw1wqg==
-releaseDate: '2026-04-07T11:47:59.477Z'
+    sha512: 5VYr9g7l9zOZLVoINYPTW8xtyqyQ0HWWuekUKPCDwu/Wkdor7+ZaoWF/Eo4UQJ6WnYtCojMpgfWVXrGo5DToyg==
+    size: 106971277
+path: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.6.1/IronClaw-arm64-mac.zip
+sha512: V3gYDCsSg5diRcmBwsUrEx0xffBcZHW/RlFbzj3sB6gy22oUQws+tUwoCSNjGXgwnyaO7uXamEHwbYpFyG8ZJQ==
+releaseDate: '2026-04-07T12:02:17.977Z'
