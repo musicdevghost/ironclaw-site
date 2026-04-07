@@ -1,17 +1,17 @@
-version: 0.5.1
+version: 0.5.4
 files:
-  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.1/IronClaw-arm64-mac.zip
-    sha512: JMtg+hQy3ln6ZvaFG+S7QYczAguB9W1aImiydfbd6CNpx1abs2YlOzrsnXLvrkzInNYdT8WE+3LdwG8STtJLcA==
-    size: 96539471
-  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.1/IronClaw-mac.zip
-    sha512: rTjLZ8M/BYVDtl3RZKtin+ow9xayCO2DIYLzZuZ14k0Rz/KnXJY88pxnE3mQqWEnZHVrht7wK1rGcWox10f5lg==
-    size: 102512668
-  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.1/IronClaw-arm64.dmg
-    sha512: 71pE2f1Bi7mCKHHwQZqySwfxw/JOO0feIybAhyC24ybgTRjRsolC4XB+kKPFA7joxXBdpmBUWy/oMMgIXzvUHg==
-    size: 101126601
-  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.1/IronClaw-x64.dmg
-    sha512: IAxIV0F2nkkfVXUe9bNU///bDEUCuaj0sGAB0ULNebaGuuA6fSQNvf5zBs0DDtXiaZ/FpwTPYmf/7RI/G2vaGA==
-    size: 106962052
-path: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.1/IronClaw-arm64-mac.zip
-sha512: JMtg+hQy3ln6ZvaFG+S7QYczAguB9W1aImiydfbd6CNpx1abs2YlOzrsnXLvrkzInNYdT8WE+3LdwG8STtJLcA==
-releaseDate: '2026-04-07T11:21:38.303Z'
+  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.4/IronClaw-arm64-mac.zip
+    sha512: +6ACYpl1QdSpLtP6TBy3vmbImcynVBDddm6SiOglxpZgkddJMc1DoSPHDb+Uu2X4tTt1h5nNaoN/8oNyhi31LA==
+    size: 96540012
+  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.4/IronClaw-mac.zip
+    sha512: WoL4xAnA2r+2fBeSka4/p81mGN/p6K03tSV8vxOsRBjGaJ+YeUfrqwFKuR3fTpNp2S8g6d62y8wQmwtdIq/b5w==
+    size: 102513231
+  - url: IronClaw-arm64.dmg
+    sha512: Dz7k60esnHGtHR9O1dUvsDCwRralowun+4xVSokJnp2s4YhLEOzKkikKr9VVxSoQbrbhZ+BpRI0hcMi7L8pLaA==
+    size: 101125913
+  - url: IronClaw-x64.dmg
+    sha512: 8IGoFgnh5Fo5FCA3eyKdWZxDAQdS5TI5QHH55nf4BGRHQaDu1M6e417wJMmslPih2k1L9u3HVlnBA01D8YVPfA==
+    size: 106970668
+path: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.5.4/IronClaw-arm64-mac.zip
+sha512: +6ACYpl1QdSpLtP6TBy3vmbImcynVBDddm6SiOglxpZgkddJMc1DoSPHDb+Uu2X4tTt1h5nNaoN/8oNyhi31LA==
+releaseDate: '2026-04-07T11:38:35.632Z'
