@@ -1,11 +1,11 @@
-version: 0.4.1
+version: 0.4.3
 files:
-  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.4.1/IronClaw-arm64-mac.zip
-    sha512: 86+XTvX+6zLHDVoDAVdKx0mdTHtukArR5U/iWzBqFLWVGezns6lsU38zEwVA1XccDs6YZka0Ubrmq1CJPN9/uA==
-    size: 97034144
-  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.4.1/IronClaw-mac.zip
-    sha512: 3IwJNnPeUYOY/2UQle0fzBlo8Nyz32UZiD109TaHBVCn8qqL10iG1j4mvRTqP1p5Pgr7OAFYbSp/gadP7r34YQ==
-    size: 103007362
-path: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.4.1/IronClaw-arm64-mac.zip
-sha512: 86+XTvX+6zLHDVoDAVdKx0mdTHtukArR5U/iWzBqFLWVGezns6lsU38zEwVA1XccDs6YZka0Ubrmq1CJPN9/uA==
-releaseDate: '2026-04-07T09:30:00.000Z'
+  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.4.3/IronClaw-arm64-mac.zip
+    sha512: XuCvDyeNN8MSl6LGUQqDeF9jCz2x9bNtOLkNCIX5o0CEhL6GOYV7I0ainxdYoaf8y2x09sZBtB++i2AoZyL8xg==
+    size: 97034326
+  - url: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.4.3/IronClaw-mac.zip
+    sha512: Wg9MgyiKG+EgSp9tr3K9P76A6RMzwMoQBvX8n0EpfUNEPpnqOuZzcwkjvDYwl7/mSO83Z8Y2f/P3njYj9ObHcw==
+    size: 103007532
+path: https://github.com/musicdevghost/ironclaw-site/releases/download/v0.4.3/IronClaw-arm64-mac.zip
+sha512: XuCvDyeNN8MSl6LGUQqDeF9jCz2x9bNtOLkNCIX5o0CEhL6GOYV7I0ainxdYoaf8y2x09sZBtB++i2AoZyL8xg==
+releaseDate: '2026-04-07T10:03:29.026Z'
