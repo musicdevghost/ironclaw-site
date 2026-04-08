@@ -1,8 +1,11 @@
 version: 0.8.0
 files:
+  - url: IronClaw-0.8.0-arm64-mac.zip
+    sha512: frTJSglOMQsjWvoeYJ8wWKLmMrgSgr0t5VfMjK2a6wwMPKZSwCZ7alO0/BEp9P3AQCOiBlie+fFQbiUsuGDLNQ==
+    size: 96316266
   - url: IronClaw-0.8.0-arm64.dmg
-    sha512: HnmtsWvzL3RsaZ4S2pYBbc8uXN5+qbHKlq/QZDTtjBUVXpqMrmHI5i8drZ+11N3UvokWPnBzw9eJQyxcQqkn5w==
-    size: 100674668
-path: IronClaw-0.8.0-arm64.dmg
-sha512: HnmtsWvzL3RsaZ4S2pYBbc8uXN5+qbHKlq/QZDTtjBUVXpqMrmHI5i8drZ+11N3UvokWPnBzw9eJQyxcQqkn5w==
-releaseDate: '2026-04-08T13:06:35.441Z'
+    sha512: Rs7cBkR4Ky/6aOC7ewlzutHvOOGGq9ItqAnitf8+9k+kjzLD54gh+T5rMVqecrVImt2ypppXeqy42CjqEH/0dQ==
+    size: 100673104
+path: IronClaw-0.8.0-arm64-mac.zip
+sha512: frTJSglOMQsjWvoeYJ8wWKLmMrgSgr0t5VfMjK2a6wwMPKZSwCZ7alO0/BEp9P3AQCOiBlie+fFQbiUsuGDLNQ==
+releaseDate: '2026-04-08T13:34:57.165Z'
